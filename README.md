@@ -8,7 +8,7 @@ Despite only allowing you to draw in black-and-white, the trainer card signature
 
 ## How to use
 
-- Use install_pillow.bat to install the required python Image library for the script to run
+- Use `install_pillow.bat` to install the required python Image library for the script to run
 - In the .py script, replace `filename` with the name of your image, and `version` with either 'bw' or 'b2w2'. Both games use different palettes, so this ensures that the resulting image looks correct.
 - Replace the variable `filename` on line 4 with the name of your chosen image 
 - Run the script and copy the resulting hex values
