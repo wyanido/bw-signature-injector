@@ -2,11 +2,11 @@ import os
 from PIL import Image
 
 grayscale = True
-filename = "image.png"
+filename = "templates/image.png"
 
 # Grab in-game accurate palette list from image
-palette = Image.open("grayscale.bmp" if grayscale else "palette.bmp")
-palette_rgb = Image.open("palette.bmp").convert('RGB')
+palette = Image.open("templates/" + ("grayscale.bmp" if grayscale else "palette.bmp"))
+palette_rgb = Image.open("templates/palette.bmp").convert('RGB')
 colours = []
 
 for y in range(0, palette_rgb.height):
