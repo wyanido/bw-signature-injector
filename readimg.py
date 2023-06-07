@@ -1,15 +1,16 @@
 import os
 from PIL import Image
 
+grayscale = True
 filename = "image.png"
 
 # Grab in-game accurate palette list from image
-palette = Image.open("palette.bmp")
-palette_rgb = palette.convert('RGB')
+palette = Image.open("grayscale.bmp" if grayscale else "palette.bmp")
+palette_rgb = Image.open("palette.bmp").convert('RGB')
 colours = []
 
-for y in range(0, palette.height):
-	for x in range(0, palette.width):
+for y in range(0, palette_rgb.height):
+	for x in range(0, palette_rgb.width):
 		colours.append(palette_rgb.getpixel((x, y)))
 
 # Convert target image into the correct dimensions
