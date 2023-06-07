@@ -15,9 +15,15 @@ Despite only allowing you to draw in black-and-white, the trainer card signature
 
 _Congrats! You have now done something that should have never been made possible!_
 
-![alt text](github/card.gif)
+![](github/card.gif)
 
 ## Important info
 
 - If the image values aren't imported exactly from offset `0x2817A8` onwards, the game will freeze.
 - Non-grayscale images are reset to black-and-white once the trainer card menu is closed, and will probably look terrible. If you want something that looks good long-term, set `grayscale` to `True` in the python script before running, and the image will be saved exactly how it looks when you import it. 
+
+
+| Yuck. Gross.  | Nice and clean.  |
+| ------------- | ------------- |
+| ![](github/converted.png)  | ![](github/grayscale.png) |
+| _A coloured image converted by the game_  | _An image imported as grayscale_  |
