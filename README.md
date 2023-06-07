@@ -1,4 +1,4 @@
-# bw-trainer-card-importer
+# bw-signature-injector
 
 A simple tool for injecting images into your trainer card in any generation 5 Pokemon game.
 
@@ -12,6 +12,10 @@ Despite only allowing you to draw in black-and-white, the trainer card signature
 - Replace the variable `filename` on line 4 with the name of your chosen image 
 - Run the script and copy the resulting hex values
 - Open your trainer card and paste the copied values at address `0x2817A8` of the game's Main RAM
+
+_Congrats! You have now done something that should have never been made possible!_
+
+![alt text](github/card.gif)
 
 ## Important info
 
