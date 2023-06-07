@@ -1,2 +1,19 @@
 # bw-trainer-card-importer
- 
+
+A simple tool for injecting images into your trainer card in any generation 5 Pokemon game.
+
+## How does it work?
+
+Despite only allowing you to draw in black-and-white, the trainer card signature shares a palette with the rest of the trainer card, allowing for around 146 unqiue colours to be used.
+
+## How to use
+
+- Use install_pillow.bat to install the required python Image library for the script to run
+- Replace the variable `filename` on line 4 with the name of your chosen image 
+- Run the script and copy the resulting hex values
+- Open your trainer card and paste the copied values at address `0x2817A8` of the game's Main RAM
+
+## Important info
+
+- If the image values aren't imported exactly from offset `0x2817A8` onwards, the game will freeze.
+- Non-grayscale images are reset to black-and-white once the trainer card menu is closed, and will probably look terrible. If you want something that looks good long-term, set `grayscale` to `True` in the python script before running, and the image will be saved exactly how it looks when you import it. 
