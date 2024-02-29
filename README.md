@@ -4,7 +4,7 @@ A simple tool for injecting images into your trainer card in any generation 5 Po
 
 ## How does it work?
 
-Despite only allowing you to draw in black-and-white, the trainer card signature shares a palette with the rest of the trainer card, allowing for around 146 unqiue colours to be used.
+Despite only allowing you to draw in black-and-white, the trainer card signature shares a palette with the rest of the trainer card, allowing for around 146 unique colours to be used.
 
 ## How to use
 
@@ -21,7 +21,7 @@ _Congrats! You have now done something that should have never been made possible
 
 - If the image values aren't imported starting _exactly_ at the correct offset, the game will freeze.
 - Non-grayscale images are reset to black-and-white once the trainer card menu is closed, and will probably look terrible. If you want something that looks good long-term, set `grayscale` to `True` in the python script before running, and the image will be saved exactly how it looks when you import it. 
-- In these games, the trainer card changes colour at different milestones. I have no idea if this changes the palette and would therefore ruin the coloured images.
+- The trainer card changes palette at different game milestones, which messes up coloured images if you don't have the lowest tier trainer card.
 
 | Yuck. Gross.  | Nice and clean.  |
 | ------------- | ------------- |
